@@ -6,7 +6,8 @@ function Movie({ id, title, year, summary, medium_cover_image, genres }) {
     return (
         <div>
             <Link to={{
-                pathname: "./about",
+                // "./movie_detail" 로 큰 따옴표 하거나, ~(역 따옴표) 하면 변수명으로 할 수 있음
+                pathname: `./movie/${id}`,
                 state: {
                     year,
                     title,
